@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: SpingAI
+
+  ai:
+    azure:
+      openai:
+        endpoint:
+        api-key:
+        chat:
+          options:
+            deployment-name: gpt-4o
+            model: gpt-4o
+    mcp:
+      client:
+        server-url: http://localhost:8080/mcp
+      server:
+        name: mongo-mcp-server
+        version: 0.0.1
+        enabled: true
+
+# MongoDB configurations
+mongodb:
+  uri: mongodb://localhost:27017/?
